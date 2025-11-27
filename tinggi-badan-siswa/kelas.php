@@ -5,7 +5,7 @@ if(!isset($_SESSION['id_user'])){
     exit;
 }
 // Hanya guru
-if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'guru') {
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'pemilik') {
     echo "<script>
             alert('Anda tidak memiliki akses ke halaman ini!');
             window.location.href = 'index.php';
