@@ -1,10 +1,11 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
-// Cek apakah user sudah login
-if(!isset($_SESSION['id_user'])){
-    // Jika belum login, redirect ke login.php
-    header('Location: login.php');
+// jika belum login → arahkan ke login.php
+if (!isset($_SESSION['id_user'])) {
+    header("Location: login.php");
     exit;
 }
 ?>

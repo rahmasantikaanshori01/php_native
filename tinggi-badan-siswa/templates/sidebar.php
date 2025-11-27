@@ -24,6 +24,7 @@
                     <li><a href="log_aktivitas.php">Aktivitas</a></li>
                     <li><a href="laporan.php">Laporan</a></li>
                     <li><a href="user.php">User</a></li>
+                    <li><a href="profile.php">Profile</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </nav>
